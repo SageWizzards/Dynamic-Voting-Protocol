@@ -48,6 +48,7 @@
               "icon": "lucide-file",
               "title": "Una Nueva Política para un Nuevo Mundo"
             }
+<<<<<<< HEAD
           },
           {
             "id": "9ed9af16f5a4711c",
@@ -79,6 +80,11 @@
           }
         ],
         "currentTab": 4
+=======
+          }
+        ],
+        "currentTab": 2
+>>>>>>> origin/main
       }
     ],
     "direction": "vertical"
@@ -97,8 +103,12 @@
             "state": {
               "type": "file-explorer",
               "state": {
+<<<<<<< HEAD
                 "sortOrder": "alphabetical",
                 "autoReveal": false
+=======
+                "sortOrder": "alphabetical"
+>>>>>>> origin/main
               },
               "icon": "lucide-folder-closed",
               "title": "Explorador de archivos"
@@ -220,12 +230,21 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
+<<<<<<< HEAD
   "active": "32b61dad109ac23c",
+=======
+  "active": "8ce9bb4a781b441c",
+>>>>>>> origin/main
   "lastOpenFiles": [
     "Izquierda o derecha.md",
     "Democracia.md",
     "Hacia una Política de Experticia y Democracia Directa.md",
+<<<<<<< HEAD
     "Más que una representación necesitamos participación.md",
     "Una Nueva Política para un Nuevo Mundo.md"
+=======
+    "Una Nueva Política para un Nuevo Mundo.md",
+    "Más que una representación necesitamos participación.md"
+>>>>>>> origin/main
   ]
 }
