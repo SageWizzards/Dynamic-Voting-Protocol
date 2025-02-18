@@ -1,0 +1,5 @@
+Sabemos que el problema central no es solo quién gobierna, sino **cómo se gobierna**. Durante demasiado tiempo, hemos delegado la toma de decisiones en una "clase política" que no vive nuestras vidas ni conoce nuestros problemas de primera mano. Sin embargo, no creemos que los políticos sean inherentemente corruptos o indiferentes; el problema es **un sistema que los aleja de la realidad**, un sistema que incentiva la lealtad a intereses partidistas por encima de las soluciones reales.
+
+Por otro lado, reconocemos que hay un problema estructural en la forma en la que se diseñan y aplican las leyes. **Los políticos no son expertos en todo, ni pueden serlo**. Aunque tengan asesores y presupuestos para estudios técnicos, es imposible que cualquier líder tenga a su disposición todos los saberes científicos, tecnológicos y sociales sin verse limitado por su propio sesgo ideológico. Necesitamos una nueva manera de legislar y gobernar, una en la que **el conocimiento especializado y la voz ciudadana sean parte activa del proceso de toma de decisiones**.
+
+[[Hacia una Política de Experticia y Democracia Directa]]
