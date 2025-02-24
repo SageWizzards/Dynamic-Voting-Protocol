@@ -1,9 +1,9 @@
 # Dynamic Voting Protocol: A Decentralized Decision-Making System Based on Thematic Reputation, Vote Delegation, and Bridging Strategies
 
 **Juan José Albán**  
-*jalban.arq@gmail.com*
-*j.alban@uniandes.edu.co*
-*Revision: 2025-02-24 A*
+*jalban.arq@gmail.com*  
+*j.alban@uniandes.edu.co*  
+*Revision: 2025-02-24 A*  
 
 ## Abstract
 
