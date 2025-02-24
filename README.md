@@ -141,13 +141,15 @@ Thematic reputation is a composite score, ranging from 0 to 1, calculated for ea
 
 The composite reputation score \( R_t \) for a theme \( t \) is computed as:
 
-\[ R_t = w_1 \cdot E_t + w_2 \cdot C_t + w_3 \cdot A_t \]
+![image](https://github.com/user-attachments/assets/22e679e4-32d2-4d21-a493-27b7522d5074)
+
 
 Where:
-- \( E_t \): Peer evaluation score for theme \( t \) (weighted average of ratings).
-- \( C_t \): Contribution score for theme \( t \) (sum of verified contributions).
-- \( A_t \): Accuracy score for theme \( t \) (alignment with outcomes).
-- \( w_1, w_2, w_3 \): Configurable weights summing to 1 (e.g., 0.4, 0.3, 0.3), adjustable by governance.
+- Rt: Thematic reputation score for a specific theme ( t ) (ranges from 0 to 1).
+- Et: Peer evaluation score for theme ( t ), calculated as the weighted average of ratings received from peers, where each rating is weighted by the evaluator’s reputation in ( t ) (ranges from 0 to 1).
+- Ct: Contribution score for theme ( t ), derived from the sum of verified contributions in ( t ) (ranges from 0 to 1).
+- At: Accuracy score for theme ( t ), based on the alignment of past encrypted votes with successful outcomes, computed as a rolling average (ranges from 0 to 1).
+- w1,w2+,w3: Configurable weights for peer evaluations, contributions, and accuracy, respectively, summing to 1 (e.g., 
 
 To prevent stagnation, reputation decays over time (e.g., 5% monthly) unless refreshed by new evaluations, contributions, or votes, mirroring *Torre Protocol*’s scarcity principle (Torrenegra, 2018). A cap (e.g., 0.9) limits dominance, ensuring no single voter monopolizes influence—a lesson from *Google Votes*, where delegation concentrated power among trusted experts (Hardt & Lopes, 2015).
 
