@@ -68,6 +68,11 @@ The Dynamic Voting Protocol is a decentralized system designed to enhance collec
 
 Collective decision-making has long faced challenges such as manipulation by uninformed or coordinated groups, lack of transparency, and difficulty ensuring diverse representation. Traditional voting systems often rely on simple majority rule, which can overlook expertise and marginalize minority perspectives. Blockchain technology offers a solution by providing an immutable, transparent ledger, but it alone does not address the need for informed participation or consensus across diverse groups. The Dynamic Voting Protocol builds on these foundations, introducing a system where voting power reflects thematic expertise, delegation enhances flexibility, and bridging strategies ensure broad consensus, aiming to create a more equitable and effective decision-making framework.
 
+This protocol is based on the TAPP project principles (while is not affiliated with it).
+   1.   Technology’s advance is inevitable, and it often brings with it much progress for some. Yet, progress for all is not guaranteed. We have an obligation to foresee the dilemmas presented by emerging technology and to generate solutions to them.
+   2.   There is no silver bullet; effective solutions to technology-induced public dilemmas require a mix of government regulation and tech-sector self-governance. The right mix can only result from strong and trusted linkages between the tech sector and government.
+   3.   Ensuring a future where public purpose drives innovation requires the next generation of tech leaders to act; we must train and inspire them to implement sustainable solutions and carry the torch.
+
 ---
 
 ## 2. Protocol Overview
@@ -284,6 +289,7 @@ Thanks to contributors for their valuable feedback.
 
 - Nakamoto, S., 2008. Bitcoin: A Peer-to-Peer Electronic Cash System.
 - Buterin, V., 2013. Ethereum Whitepaper.
+- Ovadya, A., 2022. How Platform Recommendation Systems Might Reduce Division and Strengthen Democracy
 
 ---
 
