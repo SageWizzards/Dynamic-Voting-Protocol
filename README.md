@@ -129,7 +129,38 @@ Voter profiles are managed through storers—applications authorized by users to
 
 ### 3.2. Reputation Assessments
 
-Reputation is assessed through peer evaluations, verified contributions, and past voting accuracy, ensuring that expertise influences voting weight.
+Reputation assessments are the cornerstone of the *Dynamic Voting Protocol*, providing the mechanism to calculate thematic reputation scores that determine each voter’s dynamic voting weight. These assessments ensure that influence in decision-making reflects expertise, credibility, and active contribution within specific domains (e.g., technology, governance, community welfare), fostering a meritocratic system. Drawing from the *Torre Protocol*’s recommendation weight system (Torrenegra, 2018) and the delegation-driven trust networks of *Google Votes* (Hardt & Lopes, 2015), this protocol refines reputation evaluation to balance accuracy, transparency, and privacy, while incorporating safeguards against abuse and aligning with Colombia’s requirement for secret voting.
+
+Thematic reputation is a composite score, ranging from 0 to 1, calculated for each voter across distinct categories relevant to the voting context. The assessment process integrates three primary inputs, each weighted and verified to ensure reliability:
+
+- **Peer Evaluations**: Voters can assess others’ expertise in specific domains, submitting ratings (e.g., 0 to 1) accompanied by justifications, such as references to past contributions or decisions. Inspired by *Torre Protocol*’s public recommendations (Torrenegra, 2018), these evaluations are recorded on the blockchain, but unlike Torre’s fully public model, they are encrypted to protect voter privacy—only the evaluated voter and authorized delegates (if any) can decrypt them using zero-knowledge proofs (ZKPs). A voter’s peer evaluation score is the average of received ratings, weighted by the evaluators’ own reputation in the same domain, ensuring credibility cascades through the network. For example, if Ana (reputation 0.8) rates Carlos (reputation 0.9) at 0.85 in "technology," Carlos’s score benefits more than if rated by a novice (reputation 0.2).
+
+- **Verified Contributions**: Objective records of a voter’s tangible contributions—such as code commits in a DAO, policy proposals in a consultation, or community initiatives—enhance reputation. These are akin to *Torre Protocol*’s verified experiences (Torrenegra, 2018), where shared professional history bolstered credibility. Contributions are submitted via storers, validated by nodes through predefined criteria (e.g., impact metrics, peer endorsements), and assigned a contribution score (0 to 1). For instance, a voter who authored a successful DAO upgrade might earn a 0.7 in "technology," verified by community consensus without revealing vote-specific details, preserving secrecy.
+
+- **Past Voting Accuracy**: The protocol assesses the alignment of a voter’s past decisions with successful outcomes, a novel metric absent in *Torre Protocol* but echoing *Google Votes*’ meritocratic delegation trends (Hardt & Lopes, 2015). Accuracy is measured by comparing encrypted votes to objective results (e.g., a DAO proposal’s implementation success), using ZKPs to maintain ballot secrecy while proving congruence. A voter consistently supporting effective decisions earns a higher accuracy score (0 to 1), calculated as a rolling average over a defined period (e.g., 12 months). This incentivizes informed participation without disclosing individual votes publicly.
+
+The composite reputation score \( R_t \) for a theme \( t \) is computed as:
+
+\[ R_t = w_1 \cdot E_t + w_2 \cdot C_t + w_3 \cdot A_t \]
+
+Where:
+- \( E_t \): Peer evaluation score for theme \( t \) (weighted average of ratings).
+- \( C_t \): Contribution score for theme \( t \) (sum of verified contributions).
+- \( A_t \): Accuracy score for theme \( t \) (alignment with outcomes).
+- \( w_1, w_2, w_3 \): Configurable weights summing to 1 (e.g., 0.4, 0.3, 0.3), adjustable by governance.
+
+To prevent stagnation, reputation decays over time (e.g., 5% monthly) unless refreshed by new evaluations, contributions, or votes, mirroring *Torre Protocol*’s scarcity principle (Torrenegra, 2018). A cap (e.g., 0.9) limits dominance, ensuring no single voter monopolizes influence—a lesson from *Google Votes*, where delegation concentrated power among trusted experts (Hardt & Lopes, 2015).
+
+**Privacy and Delegation Compatibility**: In Colombia, ballot secrecy mandates that vote content remain confidential. Reputation assessments comply by encrypting all inputs—evaluations, contributions, and voting records—on the blockchain. ZKPs allow nodes to verify these inputs’ validity (e.g., that Ana rated Carlos, or Carlos voted) without exposing specifics, enabling delegates to aggregate weights (e.g., Ana’s 0.8 contributes to Carlos’s total) while preserving secrecy. This adapts *Google Votes*’ "Golden Rule" (Hardt & Lopes, 2015)—where voters saw delegated actions—into a privacy-first model where only the voter and delegate access relevant data.
+
+**Safeguards Against Manipulation**: To counter Sybil attacks or inflated ratings, the protocol:
+- Requires verifications (similar to *Torre Protocol*’s three-verifier rule) for initial reputation seeding.
+- Applies a reputation-weighted dampening factor to peer evaluations, reducing the impact of low-reputation voters.
+- Uses anomaly detection (e.g., clustering algorithms) to flag coordinated rating schemes, penalizing offenders with temporary reputation reductions.
+
+For example, Juan, a new DAO voter, earns an initial "technology" reputation of 0.3 from verified code commits. Peers with reputations of 0.7 and 0.5 rate him 0.8 and 0.6, yielding an \( E_t \) of 0.73 (weighted average). His accuracy \( A_t \) is 0.5 based on past votes, and with weights \( w_1 = 0.4 \), \( w_2 = 0.3 \), \( w_3 = 0.3 \), his \( R_t = 0.4 \cdot 0.73 + 0.3 \cdot 0.3 + 0.3 \cdot 0.5 = 0.592 \). Over time, Juan’s score decays unless he contributes further, ensuring active engagement.
+
+Reputation assessments thus empower the protocol to elevate expertise, support delegation, and maintain trust, all while respecting privacy constraints like Colombia’s. They bridge *Torre Protocol*’s professional credibility with *Google Votes*’ practical delegation, creating a robust, scalable system for informed collective governance.
 
 ### 3.3. Vote Delegation
 
