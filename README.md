@@ -139,7 +139,7 @@ Thematic reputation is a composite score, ranging from 0 to 1, calculated for ea
 
 - **Past Voting Accuracy**: The protocol assesses the alignment of a voter’s past decisions with successful outcomes, a novel metric absent in *Torre Protocol* but echoing *Google Votes*’ meritocratic delegation trends (Hardt & Lopes, 2015). Accuracy is measured by comparing encrypted votes to objective results (e.g., a DAO proposal’s implementation success), using ZKPs to maintain ballot secrecy while proving congruence. A voter consistently supporting effective decisions earns a higher accuracy score (0 to 1), calculated as a rolling average over a defined period (e.g., 12 months). This incentivizes informed participation without disclosing individual votes publicly.
 
-The composite reputation score \( R_t \) for a theme \( t \) is computed as:
+The composite reputation score \( Rt \) for a theme \( t \) is computed as:
 
 ![image](https://github.com/user-attachments/assets/22e679e4-32d2-4d21-a493-27b7522d5074)
 
