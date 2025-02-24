@@ -302,5 +302,3 @@ Thanks to contributors for their valuable feedback.
 - Ovadya, A., 2022. How Platform Recommendation Systems Might Reduce Division and Strengthen Democracy
 
 ---
-
-© Dynamic Voting Labs
