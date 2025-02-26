@@ -424,17 +424,9 @@ Intellectual Property
    might or might not be available; nor does it represent that it has
    made any independent effort to identify any such rights.  Information
    on the procedures with respect to rights in RFC documents can be
-   found in BCP 78 and BCP 79.
+   found in BCP 78 and BCP 79 of the Internet Research Task Force.
 
-   Copies of IPR disclosures made to the IETF Secretariat and any
-   assurances of licenses to be made available, or the result of an
-   attempt made to obtain a general license or permission for the use of
-   such proprietary rights by implementers or users of this
-   specification can be obtained from the IETF on-line IPR repository at
-   http://www.ietf.org/ipr.
-
-   The IETF invites any interested party to bring to its attention any
+   The writers invites any interested party to bring to its attention any
    copyrights, patents or patent applications, or other proprietary
    rights that may cover technology that may be required to implement
-   this standard.  Please address the information to the IETF at
-   ietf-ipr@ietf.org.
+   this standard.  Please address the information to jalban.arq@gmail.com
