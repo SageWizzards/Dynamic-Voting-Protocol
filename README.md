@@ -1,9 +1,9 @@
-# Dynamic Voting Protocol: A Decentralized Decision-Making System Based on Thematic Reputation, Vote Delegation, and Bridging Strategies
+# RFC: Dynamic Voting Protocol: A Decentralized Decision-Making System Based on Thematic Reputation, Vote Delegation, and Bridging Strategies
 
 **Juan José Albán**  
 *jalban.arq@gmail.com*  
 *j.alban@uniandes.edu.co*  
-*Revision: 2025-02-24 A*  
+*Revision: 2025-02-26 A*  
 
 ## Abstract
 
@@ -365,3 +365,27 @@ Thanks to contributors for their valuable feedback.
 - Ovadya, A., 2022. How Platform Recommendation Systems Might Reduce Division and Strengthen Democracy
 
 ---
+
+Intellectual Property
+
+   This work has not been validated or claimed as a novelty, all of the
+   Intellectual Property Rights or other rights that might be claimed to
+   pertain to the implementation or use of the technology described in
+   this document or the extent to which any license under such rights
+   might or might not be available; nor does it represent that it has
+   made any independent effort to identify any such rights.  Information
+   on the procedures with respect to rights in RFC documents can be
+   found in BCP 78 and BCP 79.
+
+   Copies of IPR disclosures made to the IETF Secretariat and any
+   assurances of licenses to be made available, or the result of an
+   attempt made to obtain a general license or permission for the use of
+   such proprietary rights by implementers or users of this
+   specification can be obtained from the IETF on-line IPR repository at
+   http://www.ietf.org/ipr.
+
+   The IETF invites any interested party to bring to its attention any
+   copyrights, patents or patent applications, or other proprietary
+   rights that may cover technology that may be required to implement
+   this standard.  Please address the information to the IETF at
+   ietf-ipr@ietf.org.
