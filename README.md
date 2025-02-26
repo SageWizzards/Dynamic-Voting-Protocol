@@ -173,7 +173,49 @@ Reputation assessments thus empower the protocol to elevate expertise, support d
 
 ### 3.3. Vote Delegation
 
-Users can delegate their votes to others with higher thematic reputation, with weights adjusted proportionally to maintain balance.
+Vote delegation is a transformative feature of the *Dynamic Voting Protocol*, empowering participants to transfer their voting power to others with greater expertise or alignment, thereby enhancing scalability and flexibility in collective decision-making. This mechanism allows voters to delegate their votes either globally across all decisions or selectively for specific policy domains (e.g., technology, governance, social welfare), blending the fluidity of liquid democracy with thematic precision. Drawing from *Google Votes*’ category-based delegation—where 3.6% of 87,000 votes were delegated, peaking at 4.7% in the 2013 Food Fair (Hardt & Lopes, 2015)—and *Torre Protocol*’s trust-based recommendation networks (Torrenegra, 2018), this protocol refines delegation to balance voter autonomy, meritocracy, and adaptability within a blockchain framework, suitable for diverse global contexts.
+
+The delegation process is modular, revocable, and transitive, enabling votes to flow through multiple delegates while maintaining a scalable design that accommodates varying network sizes—from small communities to entire nations. Voters specify delegates via their profiles, with two primary options:
+
+- **Global Delegation**: Assigning all voting power to a single delegate across all decisions, ideal for participants seeking comprehensive representation. For example, Ana might delegate globally to Carlos, trusting his judgment universally.
+- **Domain-Specific Delegation**: Assigning voting power to different delegates for distinct policy domains, leveraging thematic reputation scores. Ana could delegate "technology" votes to Carlos (reputation 0.9) and "social welfare" votes to Maria (reputation 0.85), optimizing influence by expertise.
+
+**Delegation Mechanics**:  
+Delegation is recorded on the blockchain as a directed link from delegator to delegate, annotated with scope (global or domain-specific) and a delegation factor \( D \) (0 to 1), which adjusts the transferred weight. The effective weight delegated is calculated as:
+
+\[ W_{\text{delegated}} = R_t \cdot D \]
+
+Where:
+- \( R_t \): The delegator’s thematic reputation in the relevant domain (or average across domains for global delegation), ranging from 0 to 1.
+- \( D \): Delegation factor, defaulting to 0.8 (configurable by governance), ensuring a portion of influence remains with the delegator to encourage active participation.
+
+A delegate’s total voting weight combines their own reputation with delegated contributions:
+
+\[ W_{\text{effective}} = R_t + \sum W_{\text{delegated}} \]
+
+To prevent excessive power concentration—unlike *Google Votes*’ uncapped delegation (Hardt & Lopes, 2015)—a maximum effective weight (e.g., 2.0) is enforced, adjustable by governance to suit community needs.
+
+**Privacy and Transparency Flexibility**:  
+The protocol offers a universal approach to privacy, accommodating diverse global standards. Votes and delegation records can be:
+- *Fully Transparent*: Visible to all participants, as in *Google Votes* (Hardt & Lopes, 2015), fostering trust through openness.
+- *Partially Private*: Visible only to the delegator and delegate, using encryption and zero-knowledge proofs (ZKPs) to verify weights without revealing vote content, inspired by *Torre Protocol*’s public-yet-secure data model (Torrenegra, 2018).
+- *Configurable*: Communities can set privacy levels via governance, balancing transparency (e.g., for accountability in DAOs) with confidentiality (e.g., for sensitive public consultations).
+
+For instance, Ana delegates "technology" votes to Carlos. Her vote is encrypted, and Carlos receives a weight certificate (e.g., \( 0.8 \cdot 0.8 = 0.64 \)) via ZKP, aggregating it into his vote without necessarily seeing her choice, unless the community opts for full transparency. Voters can override delegations by voting directly, nullifying the delegate’s action for that issue, with the override logged accordingly.
+
+**Process Steps**:  
+1. **Initiation**: A voter selects a delegate via their profile, specifying scope (global or domain-specific) and signing the delegation with their private key.
+2. **Recording**: Storers submit the delegation to the blockchain, where nodes validate the voter’s identity and reputation, applying the chosen privacy model.
+3. **Execution**: For an issue (e.g., a governance proposal), the delegate casts a vote, incorporating delegated weights unless overridden. Nodes compute the effective weight, ensuring accuracy.
+4. **Revocation or Adjustment**: Voters can revoke or reassign delegation anytime, with changes recorded immutably, echoing *Google Votes*’ real-time adaptability (Hardt & Lopes, 2015).
+5. **Feedback**: Delegates receive notifications of aggregated weights, and delegators access logs of their influence (encrypted or public, per settings), reinforcing trust.
+
+**Safeguards**:  
+- *Adaptive Transitivity Limits*: Delegation chains are capped dynamically based on network size and density (e.g., 3 hops for small groups, scaling to 5-6 for national populations), set by governance to ensure broad representation while controlling complexity. This adapts *Torre Protocol*’s open-ended trust model (Torrenegra, 2018) to larger scales, covering millions with hubs reachable within 5 hops (Watts & Strogatz, 1998).
+- *Sybil Resistance*: Delegates must have verified profiles with minimum reputation thresholds, ensuring credibility.
+- *Rate Limits*: Frequent delegation changes incur cooldowns to deter gaming, enhancing stability.
+
+For example, in a national DAO with 50 million voters, Juan (reputation 0.6 in "finance") delegates globally to Sofia (reputation 0.9). Governance sets a 5-hop limit, connecting Juan to Sofia via intermediaries if needed (e.g., Juan → B → C → D → Sofia), yielding \( 0.9 + 0.6 \cdot 0.8 = 1.38 \), capped at 2.0. Juan can override specific votes, retaining control. This scalable design extends *Google Votes*’ 20,000-user success (Hardt & Lopes, 2015) to global contexts, empowering voters universally.
 
 ### 3.4. Bridging Strategies
 
