@@ -3,7 +3,8 @@
 **Juan José Albán**  
 *jalban.arq@gmail.com*  
 *j.alban@uniandes.edu.co*  
-*Revision: 2025-02-26 A*  
+**Status:** Experimental
+*Revision: 2025-02-26 B*  
 
 ## Abstract
 
