@@ -1,10 +1,16 @@
 # RFC: Dynamic Voting Protocol: A Decentralized Decision-Making System Based on Thematic Reputation, Vote Delegation, and Bridging Strategies
+Category: Experimental                                         
+                                                               **Juan José Albán**  
+                                                               *jalban.arq@gmail.com*  
+                                                               *j.alban@uniandes.edu.co*  
+                                                               Febrary 2025
+Request for Comments: P/1
+Obsoletes: P/0
 
-**Juan José Albán**  
-*jalban.arq@gmail.com*  
-*j.alban@uniandes.edu.co*  
-**Status:** Experimental
-*Revision: 2025-02-26 B*  
+## Status of this memo
+   This document specifies a experimental system for decision-making through internet, and requests discussion and suggestions for improvements. 
+   
+   Distribution of this memo is unlimited.
 
 ## Abstract
 
