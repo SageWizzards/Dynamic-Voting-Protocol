@@ -1,5 +1,5 @@
 # RFC: Dynamic Voting Protocol: A Decentralized Decision-Making System Based on Thematic Reputation, Vote Delegation, and Bridging Strategies
-Category: Experimental                                         
+Category: Experimental - Draft                                         
                                                                **Juan José Albán**  
                                                                *jalban.arq@gmail.com*  
                                                                Febrary 2025    
