@@ -9,46 +9,33 @@ This document specifies an experimental, adaptive, and self-governing system for
 The Dynamic Voting Protocol is a decentralized system designed to enhance collective decision-making. While prior versions introduced adaptive safeguards and meta-governance to prevent "meritocratic tyranny," a deeper analysis revealed vulnerabilities related to a lack of genuine accountability and explicability. This revised specification integrates three new core mechanisms: Governance Impact Statements for meta-governance proposals, Reputation Slashing as a consequence for poor governance, and a public explicability dashboard. The protocol now aims to create a system that is not only fair and adaptive but also transparently accountable and understandable to its participants.
 
 ## Contents
-Background
-
-Protocol Overview
-
-Main Components
-3.1. Voter Profiles
-3.2. Reputation Assessments
-3.2.1. Adaptive Safeguards: The Equity Thermostat
-3.3. Vote Delegation
-3.3.1. [NEW] Delegated Accountability and Slashing
-3.4. Bridging Strategies
-3.5. Verifications
-3.6. Connections
-3.7. Decentralized Network
-3.8. Participants
-3.9. Incentives
-3.10. Governance and Meta-Governance
-3.10.1. [NEW] Governance Impact Statements
-
-Vote Weight and Reputation Dynamics
-
-[NEW] Explicability and Transparency
-
-Data Structures
-
-Protocol Sketch
-
-Rewards for Nodes (Miners)
-
-Blockchain Technology
-
-Protection Against Abuse and Manipulation
-
-Applications
-
-Open Questions and Implementation Challenges
-
-Related Work
-
-Acknowledgments
+- Background
+- Protocol Overview
+- Main Components
+  - 3.1. Voter Profiles
+  - 3.2. Reputation Assessments
+  - 3.2.1. Adaptive Safeguards: The Equity Thermostat
+  - 3.3. Vote Delegation
+  - 3.3.1. Delegated Accountability and Slashing
+  - 3.4. Bridging Strategies
+  - 3.5. Verifications
+  - 3.6. Connections
+  - 3.7. Decentralized Network
+  - 3.8. Participants
+  - 3.9. Incentives
+  - 3.10. Governance and Meta-Governance
+  - 3.10.1. Governance Impact Statements
+- Vote Weight and Reputation Dynamics
+- Explicability and Transparency
+- Data Structures
+- Protocol Sketch
+- Rewards for Nodes (Miners)
+- Blockchain Technology
+- Protection Against Abuse and Manipulation
+- Applications
+- Open Questions and Implementation Challenges
+- Related Work
+- Acknowledgments
 
 References
 
